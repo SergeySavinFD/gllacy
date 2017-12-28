@@ -4,19 +4,23 @@
 <head>
     <meta charset="utf-8">
     <title>GllacyShop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
-                <img src="img/logo.svg" width="300" height="130" alt="Логотип магазина Глэйси">
+                <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
             </a>
             <ul class="site-navigation">
                 <li>
-                    <a href="catalog.html">Каталог</a>
+                    <a class="nav-submenu" href="catalog.html">Каталог</a>
                     <ul class="catalog-submenu">
-                        <li>
+                        <li class="catalog-new">
                             <a href="">
                                 <b>Новинки</b>
                             </a>
@@ -51,11 +55,18 @@
                 </li>
             </ul>
             <ul class="user-navigation">
-                <li class="search"></li>
-                <li class="login-link">Вход</li>
-                <li class="user-busket">Пусто</li>
+                <li>
+                    <a class="search" href=""></a>
+                </li>
+                <li>
+                    <a class="login-link" href="">Вход</a>
+                </li>
+                <li>
+                    <a class="user-busket" href="">Пусто</a>
+                </li>
             </ul>
-            <p>С 10 до 20, ежедневно 8 812 450-25-25
+            <p class="time">С 10 до 20, ежедневно</p>
+            <p class="phone">8 812 450-25-25
             </p>
         </nav>
     </header>
@@ -95,13 +106,13 @@
                 <h3>Малинка даром!</h3>
                 <p>При покупке 2 кг любого фруктового мороженного, добавим
                     в ваш заказ банку малинового варенья бесплатно.</p>
-                <a class="button offer-button">Хочу варенье!</a>
+                <a class="button offer-button" href="">Хочу варенье!</a>
             </article>
-            <article class="offer-left">
+            <article class="offer-right">
                 <h3>Шоколадки даром!</h3>
                 <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку
                     вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-                <a class="button offer-button">Хочу шоколадки!</a>
+                <a class="button offer-button" href="">Хочу шоколадки!</a>
             </article>
         </section>
 
@@ -247,7 +258,7 @@
     </footer>
 
     <!--                              Модальные окна                               -->
-              <!--   Вход      -->
+    <!--   Вход      -->
 
     <div class="user-login">
         <h2 class="visually-hidden">Форма входа</h2>
@@ -267,7 +278,7 @@
             </p>
         </form>
     </div>
-               <!--    Поиск     -->
+    <!--    Поиск     -->
 
     <div class="search">
         <h2 class="visually-hidden">Поле поиска</h2>
@@ -275,7 +286,7 @@
             <input type="search" name="search" placeholder="Что ищем?">
         </form>
     </div>
-              <!--     Обратная связь   -->
+    <!--     Обратная связь   -->
 
     <div class="feedback">
         <h2>Мы обязательно вам ответим!</h2>
