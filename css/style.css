@@ -54,6 +54,7 @@ input[type="radio"].visually-hidden {
     border: none;
     text-decoration: none;
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    cursor: pointer;
 }
 
 
@@ -89,6 +90,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-submenu {
+    width: 171px;
     border-radius: 5px;
 }
 
@@ -245,10 +247,25 @@ input[type="radio"].visually-hidden {
     margin: 40px 15px 15px 330px;
 }
 
+.offer-button:hover,
+.offer-button:focus {
+    background-image: -moz-linear-gradient( 90deg, rgb(236, 111, 94) 0%, rgb(245, 134, 105) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(236, 111, 94) 0%, rgb(245, 134, 105) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(236, 111, 94) 0%, rgb(245, 134, 105) 100%);
+    box-shadow: 0px 2px 2px 0px #ac1000;
+}
+
+.offer-button:active {
+    background-image: -moz-linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+    box-shadow: inset 0px 2px 2px 0px #952718;
+}
+
 .offer-left {
     width: 560px;
     height: 230px;
-    background-color: rebeccapurple;
+    background-color: rgb(201, 13, 122);
     background-image: url("../img/Малиновый фон.png");
     background-repeat: no-repeat;
     outline: none;
@@ -267,3 +284,366 @@ input[type="radio"].visually-hidden {
 
 
 /*                          Превью каталога                */
+
+.preview h3 {
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 200px 0 0 0;
+    margin-bottom: 30px;
+}
+
+.preview p {
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+}
+
+.preview-1 {
+    position: relative;
+    width: 267px;
+    height: 267px;
+    background-image: url("../img/1.jpg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.preview-1::before {
+    content: "";
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/ХИТ.jpg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.preview-2 {
+    position: relative;
+    width: 267px;
+    height: 267px;
+    background-image: url("../img/2.jpg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.preview-2::before {
+    content: "";
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/ХИТ.jpg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.preview-3 {
+    position: relative;
+    width: 267px;
+    height: 267px;
+    background-image: url("../img/3.jpg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.preview-3::before {
+    content: "";
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/ХИТ.jpg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.preview-4 {
+    position: relative;
+    width: 267px;
+    height: 267px;
+    background-image: url("../img/4.jpg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.preview-4::before {
+    content: "";
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/ХИТ.jpg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+
+/*                         О компании                     */
+
+.about-company {
+    position: relative;
+    width: 1148px;
+    height: 308px;
+    background-image: url("../img/Вафля фон.jpg");
+    border-radius: 18px;
+}
+
+.about-company h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 15px 0 0 15px;
+    margin-bottom: 10px;
+}
+
+.about-left {
+    display: inline-block;
+    width: 485px;
+    margin-left: 70px;
+}
+
+.about-right {
+    display: inline-block;
+    width: 485px;
+    margin-left: 70px;
+    vertical-align: top;
+}
+
+.about-left .about-1::before {
+    content: "";
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    background-image: url("../img/Мороженко-logo.svg");
+    background-repeat: no-repeat;
+    left: 15px;
+}
+
+.about-left .about-2::before {
+    content: "";
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    background-image: url("../img/Листик.svg");
+    background-repeat: no-repeat;
+    left: 15px;
+}
+
+.about-right .about-3::before {
+    content: "";
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    background-image: url("../img/Корова.svg");
+    background-repeat: no-repeat;
+    left: 570px;
+}
+
+.about-right .about-4::before {
+    content: "";
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    background-image: url("../img/Градусник.svg");
+    background-repeat: no-repeat;
+    left: 570px;
+}
+
+
+/*                             Новости                         */
+
+.blog-news {
+    width: 563px;
+    height: 222px;
+    background-image: url("../img/Клубничный фон1.jpg");
+    background-repeat: no-repeat;
+    background-position: 18% 39%;
+    border-radius: 22px;
+}
+
+.blog-news h2 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #323232;
+    padding-left: 15px;
+    padding-top: 30px;
+}
+
+.blog-news h3 {
+    width: 290px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    padding-left: 15px;
+    margin-top: -10px;
+}
+
+.recipt {
+    color: #323232;
+    text-decoration: underline;
+}
+
+.news form {
+    width: 553px;
+    height: 212px;
+    border: 5px solid #d1d0ce;
+    border-image-source: url("../img/Почтовый-фон.png");
+    border-image-slice: 7;
+    border-radius: 10px;
+    background-color: #f8f7f4;
+}
+
+.subscribtion label {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #5a5a5a;
+}
+
+.label-aria {
+    margin: 30px 15px;
+}
+
+.subscribtion input {
+    box-sizing: border-box;
+    font: inherit;
+    width: 368px;
+    height: 44px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.subscribtion button {
+    margin-left: 400px;
+    margin-top: -45px;
+}
+
+.subscription-button:hover,
+.subscription-button:focus {
+    background-image: -moz-linear-gradient( 90deg, rgb(236, 111, 94) 0%, rgb(245, 134, 105) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(236, 111, 94) 0%, rgb(245, 134, 105) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(236, 111, 94) 0%, rgb(245, 134, 105) 100%);
+    box-shadow: 0px 2px 2px 0px #ac1000;
+}
+
+.subscription-button:active {
+    background-image: -moz-linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+    box-shadow: inset 0px 2px 2px 0px #952718;
+}
+
+
+/*                          Карта                           */
+
+.map {
+    width: 100%;
+    min-height: 431px;
+    position: relative;
+    background-image: url("../img/map.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.map iframe {
+    width: 100%;
+    height: 431px;
+    border: 0;
+}
+
+.contacts {
+    content: "";
+    position: absolute;
+    width: 302px;
+    margin: 0;
+    padding: 20px 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    right: 50px;
+    top: 50px;
+}
+
+.contacts .reg {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #323232;
+}
+
+.contacts .reg-ad {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #323232;
+    margin-top: -12px;
+    margin-bottom: 20px;
+}
+
+.contacts .reg-ad-phone {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #323232;
+    margin: -10px 0;
+}
+
+.contacts-button {
+    width: 251px;
+}
+
+.contacts-button:hover,
+.contacts-button:focus {
+    background-image: -moz-linear-gradient( 90deg, rgb(236, 111, 94) 0%, rgb(245, 134, 105) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(236, 111, 94) 0%, rgb(245, 134, 105) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(236, 111, 94) 0%, rgb(245, 134, 105) 100%);
+    box-shadow: 0px 2px 2px 0px #ac1000;
+}
+
+.contacts-button:active {
+    background-image: -moz-linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+    box-shadow: inset 0px 2px 2px 0px #952718;
+}
+
+
+/*                             Подвал                            */
+
+.footer-menu-list .for-dillers {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.footer-menu-list a {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.footer-menu {
+    position: relative;
+}
+
+.footer-menu::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/Сердце.svg");
+}
+
+.footer-logo p {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.footer-logo p a {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
