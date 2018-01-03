@@ -23,6 +23,12 @@ ul {
     padding: 0;
 }
 
+input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -646,4 +652,152 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
     font-weight: 400;
     color: #ffffff;
+}
+
+
+/*                                 Модальные окна                    */
+
+.user-login {
+    width: 277px;
+    height: 214px;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 5px 10px 30px #4e4d4d;
+}
+
+.user-login input {
+    font: inherit;
+    font-size: 14px;
+    line-height: 24px;
+    width: 241px;
+    height: 44px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.login-area-mail {
+    margin-bottom: -15px;
+}
+
+.user-login button {
+    margin-left: 15px;
+}
+
+.user-login .send-password {
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 130px;
+    margin-top: -45px;
+}
+
+.user-login .new-reg {
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 130px;
+    margin-top: -15px;
+}
+
+.user-login a {
+    color: #323232;
+    text-decoration: underline;
+}
+
+
+/*   search     */
+
+.search-modal {
+    width: 341px;
+    height: 84px;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 5px 10px 30px #4e4d4d;
+}
+
+.search-modal input {
+    font: inherit;
+    font-size: 14px;
+    line-height: 24px;
+    width: 311px;
+    height: 44px;
+    padding: 10px;
+    margin: 20px 15px;
+    border-radius: 5px;
+}
+
+
+/*    Обратная связь     */
+
+.feedback-block {
+    width: 477px;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+}
+
+.feedback-block h2 {
+    padding: 15px;
+}
+
+.feedback-block input {
+    font: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    width: 267px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.feedback-block p {
+    margin: -10px 0 30px 15px;
+}
+
+.feedback-block textarea {
+    width: 428px;
+    height: 155px;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px 0 0 10px;
+}
+
+.feedback-block .button {
+    margin-left: 310px;
+    margin-top: -20px;
+}
+
+.feedback input::-webkit-input-placeholder,
+.feedback textarea::-webkit-input-placeholder {
+    color: rgba(68, 68, 68, 0.5);
+}
+
+.feedback input:hover,
+.feedback textarea:hover,
+.feedback input:hover::-webkit-input-placeholder,
+.feedback textarea:hover::-webkit-input-placeholder {
+    color: rgba(68, 68, 68, 0.5);
+    border-color: rgba(68, 68, 68, 0.4);
+}
+
+.feedback input:focus,
+.feedback textarea:focus,
+.feedback input:focus::-webkit-input-placeholder,
+.feedback textarea:focus::-webkit-input-placeholder {
+    font-weight: 700;
+}
+
+.feedback input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.feedback input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.feedback input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+.feedback input:focus:-ms-input-placeholder {
+    color: transparent;
 }
